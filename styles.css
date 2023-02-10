@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Terminus";
+  src: url("terminus-kit/terminusttfwindows-4.49.2-webfont.woff") format("woff");
+  src: url("terminus-kit/terminusttfwindows-4.49.2-webfont.woff2") format("woff2");
+}
+html,
+body {
+  font-family: "Terminus", Arial;
+  line-height: 0;
+  height: 100vh;
+  overflow: auto;
+}
+
+body {
+  /* background-color: $bgcolor; */
+  margin: 0;
+  background-image: url(/img/gtfo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #f95738;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.904);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav p {
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 2px;
+}
+nav #p1 {
+  color: #69385c;
+}
+nav #p2 {
+  color: #c09bd8;
+}
+nav #p3 {
+  color: #715b64;
+}
+nav #p4 {
+  color: #89937c;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  /* background-color: rgba(0, 0, 0, 0.438); */
+}
+.titleContainer .title {
+  background-color: rgba(0, 0, 0, 0.904);
+  color: white;
+  display: flex;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  line-height: normal;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+}
+.titleContainer .title:hover {
+  cursor: default;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.904);
+  margin-top: 30px;
+}
+.search p {
+  color: white;
+}
+.search input {
+  width: 80%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.904);
+  font-family: "Terminus", Arial;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+.search input:focus {
+  outline: none;
+}
+
+.weatherWrapper {
+  display: flex;
+  /* background-color: #715b64; */
+  justify-content: flex-end;
+  color: white;
+  margin: 10px;
+}
+.weatherWrapper .weatherBox {
+  background-color: rgba(0, 0, 0, 0.904);
+  padding: 0 5px 0 5px;
+  margin-right: 20px;
+  display: flex;
+}
+.weatherWrapper .weatherBox .weatherInner {
+  text-align: right;
+  margin-right: 8px;
+}
+
+.bar {
+  width: 10px;
+  line-height: 12px;
+}
+
+.headlinesWrapper {
+  position: absolute;
+  right: 0;
+  margin-right: 29px;
+  padding: 0px 6px 0px 6px;
+  background-color: rgba(0, 0, 0, 0.904);
+  color: white;
+}
+.headlinesWrapper .headlinesInner {
+  display: flex;
+  flex-direction: row;
+}
+.headlinesWrapper #headlines {
+  width: 150px;
+  line-height: normal;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
