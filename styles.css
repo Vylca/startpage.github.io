@@ -69,12 +69,18 @@ nav #p4 {
   background-color: rgba(0, 0, 0, 0.904);
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   line-height: normal;
   text-align: center;
+  padding: 15px 10px 10px 10px;
   width: 200px;
   height: fit-content;
+}
+.titleContainer .title h1, .titleContainer .title h3 {
+  margin: 0;
+  line-height: 20px;
 }
 .titleContainer .title:hover {
   cursor: default;

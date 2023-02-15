@@ -84,13 +84,19 @@ nav {
    height: 40vh;
    /* background-color: rgba(0, 0, 0, 0.438); */
    .title {
+      h1, h3 {
+         margin: 0;
+         line-height: 20px;
+      }
       background-color: $textbox-color;
       color: $text-color;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       padding: $default-padding;
       line-height: normal;
       text-align: center;
+      padding: 15px 10px 10px 10px;
       width: 200px;
       height: fit-content;
    }

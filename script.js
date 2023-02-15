@@ -12,10 +12,12 @@ document.getElementById("date").innerHTML = today;
 
 time = now.getHours() + ":" + now.getMinutes();
 if (parseInt(now.getMinutes()) < 10) {
-   time = now.getHours() + ": 0" + now.getMinutes(); 
+   time = now.getHours() + ": 0" + now.getMinutes();
 }
-document.getElementById("time").innerHTML = time;
+hour = parseInt(now.getHours());
+document.getElementById("flavour").innerHTML = gettext(hour);
 
+document.getElementById("time").innerHTML = time;
 
 /* Weather function */
 
@@ -25,7 +27,7 @@ Weather.setApiKey(apiKey);
 Weather.getCurrent("Paris", function (current) {
    document.getElementById("weatherTemp").innerHTML =
       Math.round(Weather.kelvinToCelsius(current.temperature())) + "°C";
-   document.getElementById("weatherMore").innerHTML = current.conditions()
+   document.getElementById("weatherMore").innerHTML = current.conditions();
 });
 
 function getnews() {
@@ -39,4 +41,18 @@ function getnews() {
                "<h5>" + response.articles[i].title + "</h5>";
          }
       });
+}
+
+function gettext(hour) {
+   if (hour >= 22 && hour <= 5) {
+      return "Good night.";
+   } else if (hour >= 6 && hour <= 11) {
+      return "Good morning.";
+   } else if (hour >= 12 && hour <= 13) {
+      return "Time to eat :).";
+   } else if (hour >= 14 && hour <= 17) {
+      return "Good afternoon.";
+   } else if (hour >= 18 && hour <= 21) {
+      return "Good evening.";
+   }
 }
